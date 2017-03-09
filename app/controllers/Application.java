@@ -28,9 +28,9 @@ public class Application extends Controller {
 		
 		user.create(); // create db
 		session.put("user", user.username);
-		flash.success("Welcome,", user.realname);
+		flash.success("Welcome,", user.name);
 		
-		
+		Hotels.index();
 		
 		//render();
 	}
